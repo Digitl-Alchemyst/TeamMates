@@ -22,6 +22,7 @@ const tokenCache = {
   async saveToken(key: string, value: string) {
     try {
       return SecureStore.setItemAsync(key, value)
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       return
     }
